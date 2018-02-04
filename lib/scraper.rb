@@ -26,7 +26,8 @@ class Scraper
     courses = doc.css("#course-grid .posts-holder .post")
   end
 
-  def make_courses(courses)
+  def make_courses
+    courses = get_courses
     courses.collect do |course|
       title = course.css("h2").text
       schedule = course.css(".date").text
