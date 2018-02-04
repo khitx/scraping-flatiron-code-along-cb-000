@@ -22,7 +22,7 @@ class Scraper
   end
 
   def get_courses(doc)
-    doc.css("#instructors .team-holder .person-box")
+    doc.css("#course-grid .posts-holder .post")
   end
 
 end
