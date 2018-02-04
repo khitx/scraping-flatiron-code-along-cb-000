@@ -21,4 +21,8 @@ class Scraper
     doc = Nokogiri::HTML(html)
   end
 
+  def get_courses(doc)
+    doc.css("#instructors .team-holder .person-box")
+  end
+
 end
