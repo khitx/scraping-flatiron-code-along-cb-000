@@ -21,7 +21,7 @@ class Scraper
     doc = Nokogiri::HTML(html)
   end
 
-  def get_courses(doc)
+  def get_courses
     courses = doc.css("#course-grid .posts-holder .post")
   end
 
