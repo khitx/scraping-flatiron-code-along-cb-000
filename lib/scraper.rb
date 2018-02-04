@@ -25,8 +25,10 @@ class Scraper
     courses = doc.css("#course-grid .posts-holder .post")
   end
 
-  def make_courses
-
+  def make_courses(courses)
+    courses.each do |course|
+      
+    end
   end
 
 end
