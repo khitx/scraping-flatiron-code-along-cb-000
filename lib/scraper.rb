@@ -27,9 +27,8 @@ class Scraper
     end
   end
 
-  def get_courses
-    doc = get_page
-    courses = doc.css("#course-grid .posts-holder .post")
+  def get_rses
+    self.get.css("#course-grid .posts-holder .post")
   end
 
   def make_courses
